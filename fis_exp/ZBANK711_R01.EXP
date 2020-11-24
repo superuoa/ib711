@@ -1,0 +1,479 @@
+Export Definitions - Export proc, table, func for project 7-11 bankagent|Created On 22/09/2020  10:56 AM|SYSDEV|V5.0
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+<BOH>
+EXPORT|ZBANK711_R01|||
+PROC|ZBANKAGENT|1||
+PROC|ZBANKAGENT|||
+FILE|ZBANKAGENT|1||
+FILE|ZBANKAGENT|||
+<EOH>
+
+Transferring files on 22-SEP-20 at 10:56 AM
+^DBTBL("SYSDEV",1,"ZBANKAGENT"
+
+^DBTBL("SYSDEV",1,"ZBANKAGENT")
+Transaction Banking Agent for 7-11
+^DBTBL("SYSDEV",1,"ZBANKAGENT",0)
+ZBANKAG
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"AMOUNT")
+TXID|25|||||||T|Amount|S||||0||0||||7|Amount|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"BRANCH")
+TXID|1|||||||T|Branch No|S||||0||0||||3|Branch@No|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"CID")
+TXID|25|||||||T|Account No|S||||0||0||||4|Account No|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"CITIZEN")
+TXID|13|||||||T|ID Card|S||||0||0||||6|ID Card|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"MOBILE")
+TXID|10|||||||T|Mobile No|S||||0||0||||5|Mobile No|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"TERM")
+TXID|5|||||||T|Terminal No|S||||0||0||||2|Terminal@No|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"TRANTYPE")
+TXID|3|||||||T|Transaction Type|S||||0||0||||1|Transaction@Type|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",9,"TXID")
+1*|25|||||||T|TXID|S||||1||0|||||TXID|0||65633|regadm||0|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",10)
+124|PBS|0||||0|||65633|regadm|1||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",12)
+fZBANKAG
+^DBTBL("SYSDEV",1,"ZBANKAGENT",13)
+ZBANKAGENT
+^DBTBL("SYSDEV",1,"ZBANKAGENT",14)
+
+^DBTBL("SYSDEV",1,"ZBANKAGENT",16)
+TXID
+^DBTBL("SYSDEV",1,"ZBANKAGENT",22)
+0||||||||0|0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",99)
+
+^DBTBL("SYSDEV",1,"ZBANKAGENT",100)
+^ZBANKAG(TXID|1|||0
+^DBTBL("SYSDEV",1,"ZBANKAGENT",102)
+TXID
+***DONE***
+
+Transferring files on 22-SEP-20 at 10:56 AM
+^DBTBL("SYSDEV",17,"ZBANK711_R01"
+
+^DBTBL("SYSDEV",17,"ZBANK711_R01")
+Export proc, table, func for project 7-11 bankagent|65644|regadm
+^DBTBL("SYSDEV",17,"ZBANK711_R01",1)
+EXPORT|ZBANK711_R01|
+^DBTBL("SYSDEV",17,"ZBANK711_R01",2)
+PROC|ZBANKAGENT|1
+^DBTBL("SYSDEV",17,"ZBANK711_R01",3)
+PROC|ZBANKAGENT|
+^DBTBL("SYSDEV",17,"ZBANK711_R01",4)
+FILE|ZBANKAGENT|1
+^DBTBL("SYSDEV",17,"ZBANK711_R01",5)
+FILE|ZBANKAGENT|
+***DONE***
+
+Transferring files on 22-SEP-20 at 10:56 AM
+^DBTBL("SYSDEV",25,"ZBANKAGENT"
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT")
+Create by Bank agent for 7-eleven|ZBNKAGNT|65636|anuphame|62120||||||||||||||||||1
+^DBTBL("SYSDEV",25,"ZBANKAGENT",1)
+	/*
+^DBTBL("SYSDEV",25,"ZBANKAGENT",2)
+	 ORIG: 
+^DBTBL("SYSDEV",25,"ZBANKAGENT",3)
+	 DESC: 
+^DBTBL("SYSDEV",25,"ZBANKAGENT",4)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",5)
+	---- Comments --------------------------------------------------------
+^DBTBL("SYSDEV",25,"ZBANKAGENT",6)
+	This procedure contains labels that process each of the CAP interfaces.
+^DBTBL("SYSDEV",25,"ZBANKAGENT",7)
+	These interfaces include:
+^DBTBL("SYSDEV",25,"ZBANKAGENT",8)
+		account list (individual)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",9)
+		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",10)
+	The labels for each of these services is stored in ZUTBLTRAN table.  ZMRPC777
+^DBTBL("SYSDEV",25,"ZBANKAGENT",11)
+	references that table to get the appropriate label^routine to call to
+^DBTBL("SYSDEV",25,"ZBANKAGENT",12)
+	process the incoming request.
+^DBTBL("SYSDEV",25,"ZBANKAGENT",13)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",14)
+	This procedure is called only by ZMRPC777.
+^DBTBL("SYSDEV",25,"ZBANKAGENT",15)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",16)
+	Refer to ZMRPC777.proc for specifics about that procedure.
+^DBTBL("SYSDEV",25,"ZBANKAGENT",17)
+			
+^DBTBL("SYSDEV",25,"ZBANKAGENT",18)
+	---- Revision History ------------------------------------------------
+^DBTBL("SYSDEV",25,"ZBANKAGENT",19)
+	11/09/20 - Anuphab
+^DBTBL("SYSDEV",25,"ZBANKAGENT",20)
+		   o add account list search by card no
+^DBTBL("SYSDEV",25,"ZBANKAGENT",21)
+		   
+^DBTBL("SYSDEV",25,"ZBANKAGENT",22)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",23)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",24)
+	*/
+^DBTBL("SYSDEV",25,"ZBANKAGENT",25)
+	#WARN * OFF
+^DBTBL("SYSDEV",25,"ZBANKAGENT",26)
+	quit
+^DBTBL("SYSDEV",25,"ZBANKAGENT",27)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",28)
+GETTXIDAGENT(String input)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",29)
+ /* ***************************************************************************
+^DBTBL("SYSDEV",25,"ZBANKAGENT",30)
+ 	Bankagent search by txid
+^DBTBL("SYSDEV",25,"ZBANKAGENT",31)
+ 	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",32)
+ 	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",33)
+ 	*/
+^DBTBL("SYSDEV",25,"ZBANKAGENT",34)
+	type public Number ER = 0,  ZCNT = 0
+^DBTBL("SYSDEV",25,"ZBANKAGENT",35)
+	type public String RM = "" 	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",36)
+	type String ZJSON,ZCOMMA,ZDEPREC,ZPI
+^DBTBL("SYSDEV",25,"ZBANKAGENT",37)
+	set header= input.piece("|",1,10)	// Common header
+^DBTBL("SYSDEV",25,"ZBANKAGENT",38)
+	set ZTXID= input.piece("|",11)		// txid
+^DBTBL("SYSDEV",25,"ZBANKAGENT",39)
+	set ZJSON=""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",40)
+	set ZCOMMA=","
+^DBTBL("SYSDEV",25,"ZBANKAGENT",41)
+	set ZPI="|"
+^DBTBL("SYSDEV",25,"ZBANKAGENT",42)
+	set output=""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",43)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",44)
+	type ResultSet rs=Db.select("TXID,CID,AMOUNT","ZBANKAGENT","TXID=:ZTXID")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",45)
+	if rs.isEmpty() set RM = "TXID is emptry "_ZTXID quit (header_"|"_$$GETTIME()_"|0||1404|"_RM_"|"_output)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",46)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",47)
+	set ZCNT=1
+^DBTBL("SYSDEV",25,"ZBANKAGENT",48)
+	while rs.next() do {
+^DBTBL("SYSDEV",25,"ZBANKAGENT",49)
+		set ZDEPREC=""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",50)
+		set ZDEPREC.piece(ZCOMMA,1)=""""_"txid"_""":"""_rs.getCol("TXID")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",51)
+		set ZDEPREC.piece(ZCOMMA,2)=""""_"cid"_""":"""_rs.getCol("CID")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",52)
+		set ZDEPREC.piece(ZCOMMA,3)=""""_"amount"_""":"""_rs.getCol("AMOUNT")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",53)
+		SET ZJSON.piece(ZPI,ZCNT)="{"_ZDEPREC_"}"
+^DBTBL("SYSDEV",25,"ZBANKAGENT",54)
+		set ZCNT=ZCNT+1
+^DBTBL("SYSDEV",25,"ZBANKAGENT",55)
+	}
+^DBTBL("SYSDEV",25,"ZBANKAGENT",56)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",57)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",58)
+	set ZJSON=ZJSON.replace("|",",")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",59)
+	set output=ZJSON
+^DBTBL("SYSDEV",25,"ZBANKAGENT",60)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",61)
+	if ER.get() quit (header_"|"_$$GETTIME()_"|0||1999|"_RM.get()_"|"_output)	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",62)
+	set header.piece("|",7) = ZCNT		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",63)
+	quit (header_"|"_$$GETTIME()_"|0||0||"_output)	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",64)
+	 		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",65)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",66)
+ACCTLIST(String input)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",67)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",68)
+ /* ***************************************************************************
+^DBTBL("SYSDEV",25,"ZBANKAGENT",69)
+ 	BNKAGNT Account Inquiry (individual)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",70)
+ 	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",71)
+ 	Search for and return customer data for all customer records that
+^DBTBL("SYSDEV",25,"ZBANKAGENT",72)
+ 	match the input criteria.  There is a limit of 20 records maximum
+^DBTBL("SYSDEV",25,"ZBANKAGENT",73)
+ 	to be returned.
+^DBTBL("SYSDEV",25,"ZBANKAGENT",74)
+ 	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",75)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",76)
+ 
+^DBTBL("SYSDEV",25,"ZBANKAGENT",77)
+   Account search / inquiry
+^DBTBL("SYSDEV",25,"ZBANKAGENT",78)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",79)
+	Input Arguments:
+^DBTBL("SYSDEV",25,"ZBANKAGENT",80)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",81)
+	   input	"|" delimited string	/REQ/VAL/READ
+^DBTBL("SYSDEV",25,"ZBANKAGENT",82)
+	   
+^DBTBL("SYSDEV",25,"ZBANKAGENT",83)
+	   	txid			transaction id from 7-11				Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",84)
+	   	tranType		transaction type from 7-11				Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",85)
+	   	termAgentNo		terminal agent number					Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",86)
+	   	branchAgent		branch agent number					Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",87)
+	   	acctNo			account number						Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",88)
+	   	mobileNo		mobile number						Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",89)
+	   	citizen			citizen ID card						Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",90)
+	   	amountAgent		amount							Required
+^DBTBL("SYSDEV",25,"ZBANKAGENT",91)
+	   
+^DBTBL("SYSDEV",25,"ZBANKAGENT",92)
+	Returns:
+^DBTBL("SYSDEV",25,"ZBANKAGENT",93)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",94)
+	   output	"|" delimited string containing customer properties.  Note that there are some columns that
+^DBTBL("SYSDEV",25,"ZBANKAGENT",95)
+	   		are returned multiple times.  This is intentional.						*/
+^DBTBL("SYSDEV",25,"ZBANKAGENT",96)
+	   		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",97)
+	   		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",98)
+	type public Number ER = 0
+^DBTBL("SYSDEV",25,"ZBANKAGENT",99)
+	type public String RM = ""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",100)
+	type String custName, custNum, custSurname, custType, header, inqType, record = "", output, searchCond, typeValue
+^DBTBL("SYSDEV",25,"ZBANKAGENT",101)
+	type String respCode = "0000", respDesc = ""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",102)
+	type Number ACN = "", ZCNT = 0, recordCount = 0
+^DBTBL("SYSDEV",25,"ZBANKAGENT",103)
+	type String ZCUSTDTL
+^DBTBL("SYSDEV",25,"ZBANKAGENT",104)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",105)
+	set header 		= input.piece("|",1,10)	// Common header
+^DBTBL("SYSDEV",25,"ZBANKAGENT",106)
+	set TXID 		= input.piece("|",11)	// transation ID from bank agent
+^DBTBL("SYSDEV",25,"ZBANKAGENT",107)
+	set tranType 		= input.piece("|",12)	// transaction Type
+^DBTBL("SYSDEV",25,"ZBANKAGENT",108)
+	set termAgentNo 	= input.piece("|",13)	// Citizen ID number or passport number
+^DBTBL("SYSDEV",25,"ZBANKAGENT",109)
+	set branchAgent 	= input.piece("|",14)	// branch
+^DBTBL("SYSDEV",25,"ZBANKAGENT",110)
+	set acctNo		= input.piece("|",15)	// account no
+^DBTBL("SYSDEV",25,"ZBANKAGENT",111)
+	set mobileNo		= input.piece("|",16)	// mobile no
+^DBTBL("SYSDEV",25,"ZBANKAGENT",112)
+	set citizen		= input.piece("|",17)	// citizen ID card
+^DBTBL("SYSDEV",25,"ZBANKAGENT",113)
+	set amountAgent		= input.piece("|",18)	// amount;
+^DBTBL("SYSDEV",25,"ZBANKAGENT",114)
+	set output = ""	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",115)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",116)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",117)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",118)
+	// check duplicate	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",119)
+	if 'TXID.isNull() do {
+^DBTBL("SYSDEV",25,"ZBANKAGENT",120)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",121)
+		type RecordZBANKAGENT agent = Db.getRecord("ZBANKAGENT",":TXID",1)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",122)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",123)
+		if agent.getMode() set ER = 1, RM = "Duplicate Transaction "_TXID quit
+^DBTBL("SYSDEV",25,"ZBANKAGENT",124)
+		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",125)
+		// Save into ZBANKAGENT
+^DBTBL("SYSDEV",25,"ZBANKAGENT",126)
+		set agent.txid = TXID
+^DBTBL("SYSDEV",25,"ZBANKAGENT",127)
+		set agent.trantype = tranType
+^DBTBL("SYSDEV",25,"ZBANKAGENT",128)
+		set agent.term = termAgentNo
+^DBTBL("SYSDEV",25,"ZBANKAGENT",129)
+		set agent.branch = branchAgent
+^DBTBL("SYSDEV",25,"ZBANKAGENT",130)
+		set agent.cid = acctNo	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",131)
+		set agent.mobile = mobileNo
+^DBTBL("SYSDEV",25,"ZBANKAGENT",132)
+		set agent.citizen = citizen
+^DBTBL("SYSDEV",25,"ZBANKAGENT",133)
+		set agent.amount = amountAgent
+^DBTBL("SYSDEV",25,"ZBANKAGENT",134)
+		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",135)
+		do agent.save()
+^DBTBL("SYSDEV",25,"ZBANKAGENT",136)
+	}	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",137)
+	if ER.get() quit (header_"|"_$$GETTIME()_"|0||002|"_RM_"|"_output)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",138)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",139)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",140)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",141)
+	 
+^DBTBL("SYSDEV",25,"ZBANKAGENT",142)
+	// Search by customer citizen ID card
+^DBTBL("SYSDEV",25,"ZBANKAGENT",143)
+	/*if 'typeValue.isNull() do {
+^DBTBL("SYSDEV",25,"ZBANKAGENT",144)
+		type ResultSet rs = Db.select("ACN","CIF","ZCIZID=:typeValue")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",145)
+		if 'rs.next() set ER = 1, RM = "Customer Citizenship ID Not Found: "_typeValue quit
+^DBTBL("SYSDEV",25,"ZBANKAGENT",146)
+		set ACN = rs.getCol("ACN")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",147)
+	}
+^DBTBL("SYSDEV",25,"ZBANKAGENT",148)
+	// if no citizenship ID was passed in, use customer number, if it was passed in
+^DBTBL("SYSDEV",25,"ZBANKAGENT",149)
+	else  if 'custNum.isNull() do {
+^DBTBL("SYSDEV",25,"ZBANKAGENT",150)
+		type RecordCIF cif = Db.getRecord("CIF","ACN=:custNum",1)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",151)
+		if 'cif.getMode() set ER = 1, RM = "Invalid Customer Number "_custNum quit
+^DBTBL("SYSDEV",25,"ZBANKAGENT",152)
+		set ACN = cif.acn
+^DBTBL("SYSDEV",25,"ZBANKAGENT",153)
+	}
+^DBTBL("SYSDEV",25,"ZBANKAGENT",154)
+		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",155)
+	if ER.get() quit (header_"|"_$$GETTIME()_"|0||002|"_RM_"|"_output)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",156)
+	*/
+^DBTBL("SYSDEV",25,"ZBANKAGENT",157)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",158)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",159)
+	type String ZJSON,ZCOMMA,ZDEPREC,ZPI,ZSTAT
+^DBTBL("SYSDEV",25,"ZBANKAGENT",160)
+	set ZJSON=""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",161)
+	set ZCOMMA=","
+^DBTBL("SYSDEV",25,"ZBANKAGENT",162)
+	set ZPI="|"
+^DBTBL("SYSDEV",25,"ZBANKAGENT",163)
+	set ZSTAT=0
+^DBTBL("SYSDEV",25,"ZBANKAGENT",164)
+	//type ResultSet rs=Db.select("CID,GRP,TITLE1,TITLE2,TITLE3,TITLE4,ZSTATCD,BOO,ACNRELC,ZBAL","DEP","ACN=:ACN AND GRP='SAV'")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",165)
+	type ResultSet rs=Db.select("CID,GRP,TITLE1,TITLE2,TITLE3,TITLE4,ZSTATCD,BOO,ACNRELC,ZBAL","DEP","CID=:acctNo AND ZSTATCD=:ZSTAT")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",166)
+	if rs.isEmpty() set RM = "Invalid Account "_acctNo quit (header_"|"_$$GETTIME()_"|0||1404|"_RM_"|"_output)
+^DBTBL("SYSDEV",25,"ZBANKAGENT",167)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",168)
+	set ZCNT=1
+^DBTBL("SYSDEV",25,"ZBANKAGENT",169)
+	while rs.next() do {
+^DBTBL("SYSDEV",25,"ZBANKAGENT",170)
+		set ZDEPREC=""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",171)
+		set ZDEPREC.piece(ZCOMMA,1)=""""_"cid"_""":"""_rs.getCol("CID")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",172)
+		set ZDEPREC.piece(ZCOMMA,2)=""""_"grp"_""":"""_rs.getCol("GRP")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",173)
+		set ZDEPREC.piece(ZCOMMA,3)=""""_"status"_""":"""_rs.getCol("ZSTATCD")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",174)
+		set ZDEPREC.piece(ZCOMMA,4)=""""_"branch"_""":"""_rs.getCol("BOO")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",175)
+		set ZDEPREC.piece(ZCOMMA,6)=""""_"bal"_""":"""_rs.getCol("ZBAL")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",176)
+		set ZDEPREC.piece(ZCOMMA,7)=""""_"title"_""":"""_rs.getCol("TITLE1")_" "_rs.getCol("TITLE2")_" "_rs.getCol("TITLE3")_" "_rs.getCol("TITLE4")_""""
+^DBTBL("SYSDEV",25,"ZBANKAGENT",177)
+		SET ZJSON.piece(ZPI,ZCNT)="{"_ZDEPREC_"}"
+^DBTBL("SYSDEV",25,"ZBANKAGENT",178)
+		set ZCNT=ZCNT+1
+^DBTBL("SYSDEV",25,"ZBANKAGENT",179)
+	}
+^DBTBL("SYSDEV",25,"ZBANKAGENT",180)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",181)
+
+^DBTBL("SYSDEV",25,"ZBANKAGENT",182)
+	set ZJSON=ZJSON.replace("|",",")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",183)
+	set output="["_ZJSON_"]"
+^DBTBL("SYSDEV",25,"ZBANKAGENT",184)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",185)
+	if ER.get() quit (header_"|"_$$GETTIME()_"|0||1999|"_RM.get()_"|"_output)	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",186)
+	set header.piece("|",7) = ZCNT		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",187)
+	quit (header_"|"_$$GETTIME()_"|0||0||"_output)		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",188)
+	   		
+^DBTBL("SYSDEV",25,"ZBANKAGENT",189)
+public GETTIME()
+^DBTBL("SYSDEV",25,"ZBANKAGENT",190)
+	type String datetime
+^DBTBL("SYSDEV",25,"ZBANKAGENT",191)
+	
+^DBTBL("SYSDEV",25,"ZBANKAGENT",192)
+	set datetime = $H.piece(",",1).toDate().toString("YEAR-MM-DD")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",193)
+	set datetime = datetime_"T"
+^DBTBL("SYSDEV",25,"ZBANKAGENT",194)
+	set datetime = datetime_$H.piece(",",2).toTime().toString("24:60:SS")
+^DBTBL("SYSDEV",25,"ZBANKAGENT",195)
+	quit datetime	   		
+***DONE***
+
+
+<EOD>
+<BOF>
+<EOF>
+<BOP>
+Export Routines - ZBANK711_R01
+22-SEP-2020 10:56:04
+
+
