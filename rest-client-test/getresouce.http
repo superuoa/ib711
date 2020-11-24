@@ -1,0 +1,9 @@
+POST https://www.speg-machine.com/poona-webapp/webapi/auth/nocaptcha HTTP/1.1
+Content-Type: application/json
+
+{
+	"lineName": "M.anuphab",
+	"lineToken":"Ufb848246d5e583d2348454f94ea1ba3c",
+	"email":"anuphabm@gmail.com",
+	"pictureUrl":"https://profile.line-scdn.net/0hxxEFFcYBJ1d4Pwvs7UxYAER6KToPESEfAF44ZFw2cGNTDTMIRlxuZAk5fGJRDWIEEVxqOQ5sfDAC"
+}

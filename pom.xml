@@ -53,11 +53,15 @@
             <groupId>com.poona</groupId>
             <artifactId>scjdbc</artifactId>
             <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs-cust/ScJDBC-3.1.7_for_PROFILE_7_2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.poona</groupId>
             <artifactId>poona-util</artifactId>
             <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs-cust/ScJDBC-3.1.7_for_PROFILE_7_2.jar</systemPath>
         </dependency>        
         <dependency>
             <groupId>log4j</groupId>
